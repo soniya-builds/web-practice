@@ -28,7 +28,7 @@
 
             <div class="profile">
                 <img
-                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400"
+                    src="Assets/image.png"
                     alt="Profile Photo">
             </div>
 
@@ -54,7 +54,7 @@
         <!-- Main Content -->
         <main class="main-content">
 
-            <!-- Portfolio -->
+            <!-- Portfolio Section -->
             <section class="card portfolio" id="portfolio">
 
                 <h2>Portfolio</h2>
@@ -70,14 +70,14 @@
 
                     <div class="project">
                         <img
-                            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500"
-                            alt="Laptop and development workspace">
+                            src="Assets/bodyImage1.png"
+                            alt="Laptop and web development">
                     </div>
 
                     <div class="project">
                         <img
-                            src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=500"
-                            alt="Digital design workspace">
+                            src="Assets/bodyimage2.png"
+                            alt="Digital design project">
                     </div>
 
                 </div>
@@ -85,13 +85,14 @@
             </section>
 
 
-            <!-- Contact -->
+            <!-- Contact Section -->
             <section class="card contact" id="contact">
 
                 <h2>Contact</h2>
 
                 <div class="contact-content">
 
+                    <!-- Contact Information -->
                     <div class="contact-info">
 
                         <p><span>●</span> New York, United States</p>
@@ -114,30 +115,61 @@
                     <!-- Contact Form -->
                     <form class="contact-form" action="#" method="get">
 
+                        <!-- Name and Email -->
                         <div class="form-row">
+
                             <div class="form-group">
                                 <label for="name">Your Name</label>
-                                <input type="text" id="name"
-                                    name="name" placeholder="Your name" required>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Your name"
+                                    required>
                             </div>
 
                             <div class="form-group">
                                 <label for="email">Your Email</label>
-                                <input type="email" id="email"
-                                    name="email" placeholder="Your email" required>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Your email"
+                                    required>
+                            </div>
+
+                        </div>
+
+                        <!-- Subject and Nationality -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input
+                                    type="text"
+                                    id="subject"
+                                    name="subject"
+                                    placeholder="Subject"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="nationality">Nationality</label>
+                                <input
+                                    type="text"
+                                    id="nationality"
+                                    name="nationality"
+                                    placeholder="Nationality">
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject"
-                                name="subject" placeholder="Subject" required>
-                        </div>
-
+                        <!-- Large Message Box -->
                         <div class="form-group">
                             <label for="message">Your Message</label>
-                            <textarea id="message" name="message"
-                                rows="4" placeholder="Write your message..."
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="4"
+                                placeholder="Write your message..."
                                 required></textarea>
                         </div>
 

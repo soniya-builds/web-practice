@@ -1,4 +1,6 @@
 
+/* ===== 1. GENERAL STYLES ===== */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +20,7 @@ a {
 }
 
 
-/* ===== TOP NAVBAR ===== */
+/* ===== 2. TOP NAVIGATION BAR ===== */
 
 .topbar {
     width: 100%;
@@ -53,16 +55,19 @@ a {
 }
 
 
-/* ===== MAIN LAYOUT ===== */
+/* ===== 3. MAIN CONTAINER ===== */
 
 .container {
     width: 94%;
-    max-width: 1000px;
+    max-width: 1300px;
     margin: 12px auto;
     display: flex;
     align-items: flex-start;
     gap: 10px;
 }
+
+
+/* ===== 4. SIDEBAR ===== */
 
 .sidebar {
     width: 145px;
@@ -72,7 +77,7 @@ a {
 }
 
 
-/* ===== PROFILE IMAGE ===== */
+/* Profile Image */
 
 .profile {
     width: 100%;
@@ -89,7 +94,7 @@ a {
 }
 
 
-/* ===== SIDEBAR NAVIGATION ===== */
+/* Sidebar Navigation */
 
 .side-navigation {
     display: flex;
@@ -119,7 +124,7 @@ a {
 }
 
 
-/* ===== SIDEBAR BOTTOM ===== */
+/* Sidebar Bottom */
 
 .sidebar-bottom {
     display: flex;
@@ -144,7 +149,7 @@ a {
 }
 
 
-/* ===== MAIN CONTENT ===== */
+/* ===== 5. MAIN CONTENT ===== */
 
 .main-content {
     flex: 1;
@@ -165,7 +170,7 @@ a {
 }
 
 
-/* ===== PORTFOLIO FILTERS ===== */
+/* ===== 6. PORTFOLIO FILTERS ===== */
 
 .filters {
     display: flex;
@@ -191,7 +196,7 @@ a {
 }
 
 
-/* ===== PROJECT IMAGES ===== */
+/* ===== 7. PROJECT IMAGES ===== */
 
 .projects {
     display: flex;
@@ -218,7 +223,7 @@ a {
 }
 
 
-/* ===== CONTACT SECTION ===== */
+/* ===== 8. CONTACT LAYOUT ===== */
 
 .contact-content {
     display: flex;
@@ -247,10 +252,11 @@ a {
 }
 
 
-/* ===== SOCIAL ICONS ===== */
+/* ===== 9. SOCIAL LINKS ===== */
 
 .socials {
     display: flex;
+    flex-wrap: wrap;
     gap: 5px;
     margin-top: 14px;
 }
@@ -273,12 +279,14 @@ a {
 }
 
 
-/* ===== CONTACT FORM ===== */
+/* ===== 10. CONTACT FORM ===== */
 
 .contact-form {
     flex: 1;
     min-width: 0;
 }
+
+/* Name and Email side by side */
 
 .form-row {
     display: flex;
@@ -288,7 +296,7 @@ a {
 .form-group {
     flex: 1;
     min-width: 0;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .form-group label {
@@ -297,10 +305,13 @@ a {
     margin-bottom: 4px;
 }
 
+/* Input boxes */
+
 .form-group input,
 .form-group textarea {
+    display: block;
     width: 100%;
-    padding: 7px;
+    padding: 6px;
     font-family: Arial, sans-serif;
     font-size: 10px;
     background: transparent;
@@ -308,14 +319,21 @@ a {
     outline: none;
 }
 
+/* Large message box */
+
+.form-group textarea {
+    height: 75px;
+    resize: vertical;
+}
+
+/* Focus effect */
+
 .form-group input:focus,
 .form-group textarea:focus {
     border-color: #ad6256;
 }
 
-.form-group textarea {
-    resize: vertical;
-}
+/* Send button */
 
 .send-btn {
     padding: 7px 12px;
@@ -329,65 +347,4 @@ a {
 
 .send-btn:hover {
     background-color: #874b42;
-}
-
-
-/* ===== RESPONSIVE DESIGN ===== */
-
-@media (max-width: 600px) {
-
-    .topbar {
-        padding: 12px 4%;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .top-navigation {
-        gap: 14px;
-    }
-
-    .top-navigation a {
-        padding: 5px 0;
-    }
-
-    .container {
-        width: 94%;
-        margin: 10px auto;
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%;
-    }
-
-    .profile {
-        height: 140px;
-    }
-
-    .side-navigation {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .side-navigation a {
-        padding: 8px;
-    }
-
-    .main-content {
-        width: 100%;
-    }
-
-    .contact-content {
-        flex-direction: column;
-    }
-
-    .contact-info,
-    .contact-form {
-        width: 100%;
-        flex: auto;
-    }
-
-    .project {
-        flex: 1 1 120px;
-    }
 }
