@@ -1,0 +1,393 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e4d84e;
+    color: #333;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ===== TOP NAVBAR ===== */
+
+.topbar {
+    width: 100%;
+    min-height: 48px;
+    background-color: #292a28;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7%;
+}
+
+.brand {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.top-navigation {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.top-navigation a {
+    font-size: 12px;
+    padding: 15px 0;
+    transition: color 0.3s;
+}
+
+.top-navigation a:hover {
+    color: #e4d84e;
+}
+
+
+/* ===== MAIN LAYOUT ===== */
+
+.container {
+    width: 94%;
+    max-width: 1000px;
+    margin: 12px auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.sidebar {
+    width: 145px;
+    flex-shrink: 0;
+    background-color: #292a28;
+    color: white;
+}
+
+
+/* ===== PROFILE IMAGE ===== */
+
+.profile {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.profile img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* ===== SIDEBAR NAVIGATION ===== */
+
+.side-navigation {
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+}
+
+.side-navigation a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 5px;
+    font-size: 10px;
+    color: #ddd;
+    border-bottom: 1px solid #3b3c39;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.side-navigation a span {
+    width: 12px;
+    text-align: center;
+}
+
+.side-navigation a:hover {
+    color: #e4d84e;
+    background-color: #383a35;
+}
+
+
+/* ===== SIDEBAR BOTTOM ===== */
+
+.sidebar-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    border-top: 1px solid #454640;
+}
+
+.sidebar-bottom p {
+    font-size: 9px;
+    color: #bbb;
+}
+
+.sidebar-bottom a {
+    font-size: 10px;
+    color: #ddd;
+}
+
+.sidebar-bottom a:hover {
+    color: #e4d84e;
+}
+
+
+/* ===== MAIN CONTENT ===== */
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.card {
+    background-color: #f4f5e9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #d4d7c4;
+}
+
+.card h2 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+
+/* ===== PORTFOLIO FILTERS ===== */
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.filters button {
+    padding: 4px 8px;
+    font-size: 9px;
+    color: #555;
+    background: transparent;
+    border: 1px solid #c9cbbd;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filters button:hover {
+    background-color: #ad6256;
+    color: white;
+    border-color: #ad6256;
+}
+
+
+/* ===== PROJECT IMAGES ===== */
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project {
+    flex: 0 1 125px;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.project img {
+    display: block;
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.project img:hover {
+    transform: scale(1.04);
+}
+
+
+/* ===== CONTACT SECTION ===== */
+
+.contact-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.contact-info {
+    flex: 0 0 42%;
+    min-width: 0;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    margin: 9px 0;
+    font-size: 10px;
+    overflow-wrap: anywhere;
+}
+
+.contact-info p span {
+    width: 12px;
+    flex-shrink: 0;
+    color: #ad6256;
+}
+
+
+/* ===== SOCIAL ICONS ===== */
+
+.socials {
+    display: flex;
+    gap: 5px;
+    margin-top: 14px;
+}
+
+.socials a {
+    width: 19px;
+    height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ad6256;
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    background-color: #333;
+}
+
+
+/* ===== CONTACT FORM ===== */
+
+.contact-form {
+    flex: 1;
+    min-width: 0;
+}
+
+.form-row {
+    display: flex;
+    gap: 8px;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 0;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 9px;
+    margin-bottom: 4px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 7px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    background: transparent;
+    border: 1px solid #d8d9c9;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ad6256;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.send-btn {
+    padding: 7px 12px;
+    background-color: #ad6256;
+    color: white;
+    border: none;
+    font-size: 9px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.send-btn:hover {
+    background-color: #874b42;
+}
+
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 600px) {
+
+    .topbar {
+        padding: 12px 4%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .top-navigation {
+        gap: 14px;
+    }
+
+    .top-navigation a {
+        padding: 5px 0;
+    }
+
+    .container {
+        width: 94%;
+        margin: 10px auto;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .profile {
+        height: 140px;
+    }
+
+    .side-navigation {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .side-navigation a {
+        padding: 8px;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        flex: auto;
+    }
+
+    .project {
+        flex: 1 1 120px;
+    }
+}
